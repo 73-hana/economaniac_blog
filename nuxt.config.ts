@@ -9,5 +9,5 @@ export default defineNuxtConfig({
     {
       src: '~/assets/scss/common.scss'
     },
-  ]
+  ],
 })
