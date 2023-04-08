@@ -15,7 +15,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     basicAuth: {
       pairs: {
-        process.env.BASIC_ID: process.env.BASIC_PASS
+        admin: process.env.BASIC_PASS,
       }
     }
   }
