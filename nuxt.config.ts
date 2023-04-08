@@ -4,8 +4,12 @@ import { defineNuxtConfig } from "nuxt/config";
 export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
-    ['@nuxtjs/robots', {UserAgent: '*', Disallow: '/'}],
+    '@nuxtjs/robots',
   ],
+  robots: {
+    UserAgent: '*',
+    Disallow: '/',
+  },
   css: [
     {
       src: '~/assets/scss/common.scss'
