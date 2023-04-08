@@ -3,6 +3,10 @@ import { defineNuxtConfig } from "nuxt/config";
 import BasicAuth from 'nuxt-basic-authentication-module';
 
 export default defineNuxtConfig({
+  ssr: false,
+  nitro: {
+    preset: 'service-worker'
+  },
   modules: [
     '@nuxt/content',
     [BasicAuth, {enabled: true}],
